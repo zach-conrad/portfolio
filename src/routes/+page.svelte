@@ -7,7 +7,7 @@
 
 <main>
     <div id="about">
-        <p class="bottom-50 ">This is a big big test</p>
+        <p class="bottom-50 ">This is a big big bigh test</p>
         <p class="bottom-50 ">This is a big test</p>
         <p class="bottom-50 ">This is a big test</p>
         <p class="bottom-50 ">This is a big test</p>
