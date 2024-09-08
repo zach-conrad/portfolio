@@ -7,7 +7,7 @@
 
 <main>
     <div id="about">
-        <p class="bottom-50 ">Dev branch test</p>
+        <p class="bottom-50 ">Dev branch test 2</p>
         <p class="bottom-50 ">This is a big test</p>
         <p class="bottom-50 ">This is a big test</p>
         <p class="bottom-50 ">This is a big test</p>
