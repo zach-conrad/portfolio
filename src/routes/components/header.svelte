@@ -6,14 +6,18 @@
 <!--Main Navbar-->
 <header class="sticky top-0 z-50 bg-white shadow-lg font-roboto">
 	<nav class="container mx-auto p-4 flex justify-between items-center">
-		<div class="text-1xl font-bold z-50">
-			Zach <span class="text-blue-500">Conrad</span>
-		</div>
+		<a href="/">
+			<div class="text-1xl font-bold z-50">
+				Zach <span class="text-blue-500">Conrad</span>
+			</div>
+		</a>
 
 		<ul class="hidden md:flex space-x-10">
-			<li><a href="#about" class="hover:text-gray-400">About</a></li>
-			<li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
-			<li><a href="#work" class="hover:text-gray-400">Work</a></li>
+			<li><a href="#about" class="hover:text-gray-400 transition-colors duration-300">About</a></li>
+			<li>
+				<a href="#projects" class="hover:text-gray-400 transition-colors duration-300">Projects</a>
+			</li>
+			<li><a href="#work" class="hover:text-gray-400 transition-colors duration-300">Work</a></li>
 		</ul>
 
 		<!--Mobile Navbar (Hamburger to X)-->
