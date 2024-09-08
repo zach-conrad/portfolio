@@ -84,7 +84,7 @@
 
     /* Rotate and animate into "X" */
     :global(.open.top) {
-        transform: translateY(10px) rotate(45deg);
+        transform: translateY(11px) rotate(45deg);
     }
 
     :global(.open.middle) {
@@ -92,7 +92,7 @@
     }
 
     :global(.open.bottom) {
-        transform: translateY(-10px) rotate(-45deg);
+        transform: translateY(-11px) rotate(-45deg);
     }
 
     /* Z-index of the full menu should be lower than the button */
