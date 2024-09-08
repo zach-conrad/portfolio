@@ -1,11 +1,12 @@
 <script>
-    import { slide } from "svelte/transition";
     let isMenuOpen = false;
+    import { fly } from 'svelte/transition';
 </script>
+
 <!--Main Navbar-->
 <header class="sticky top-0 z-50 bg-white shadow-lg font-roboto">
     <nav class="container mx-auto p-4 flex justify-between items-center">
-        <div class="text-1xl font-bold">
+        <div class="text-1xl font-bold z-50">
             Zach <span class="text-blue-500">Conrad</span>
         </div>
 
@@ -14,43 +15,88 @@
             <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
             <li><a href="#work" class="hover:text-gray-400">Work</a></li>
         </ul>
-<!--Mobile Navbar-->
-        <button class="md:hidden focus:outline-none"
-        on:click={() => (isMenuOpen = !isMenuOpen)}
-        >
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-      <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      d="M4 6h16M4 12h16M4 18h16"
-    />
-        </svg>
+
+        <!--Mobile Navbar (Hamburger to X)-->
+        <button class="md:hidden focus:outline-none z-50" on:click={() => isMenuOpen = !isMenuOpen}>
+            <div class="hamburger-icon">
+                <span class="line top" class:open={isMenuOpen}></span>
+                <span class="line middle" class:open={isMenuOpen}></span>
+                <span class="line bottom" class:open={isMenuOpen}></span>
+            </div>
         </button>
     </nav>
+
+    <!--Mobile menu-->
     {#if isMenuOpen}
-    <ul class="md:hidden p-4 space-y-1 fixed top-0 left-0 w-full h-ful min-h-screen bg-white flex flex-col justify-center items-start" transition:slide>
-      <li><a href="#about" class="block hover:text-gray-400 text-2l text-left pl-6" on:click={() => setTimeout(() => isMenuOpen = false, 300)}>About</a></li>
-      <li><a href="#projects" class="block hover:text-gray-400 text-2l text-left pl-6" on:click={() => setTimeout(() => isMenuOpen = false, 300)}>Projects</a></li>
-      <li><a href="#work" class="block hover:text-gray-400 text-left pl-6" on:click={() => setTimeout(() => isMenuOpen = false, 300)}>Work</a></li>
+    <ul class="md:hidden p-4 space-y-20 fixed top-0 left-0 w-full min-h-screen bg-white font-roboto font-bold flex flex-col justify-center items-start z-40">
+        <li><a href="#about" class="block hover:text-gray-400 text-2xl text-left pl-6 drop-shadow-lg" on:click={() => isMenuOpen = false} transition:fly={{duration: 500, x: -500}}>About</a></li>
+        <li><a href="#projects" class="block hover:text-gray-400 text-2xl text-left pl-6 drop-shadow-lg" on:click={() => isMenuOpen = false} transition:fly={{duration: 600, x: -500}}>Projects</a></li>
+        <li><a href="#work" class="block hover:text-gray-400 text-2xl text-left pl-6 drop-shadow-lg" on:click={() => isMenuOpen = false} transition:fly={{duration: 700, x: -500}}>Work</a></li>
     </ul>
-  {/if}
+    {/if}
 </header>
 
 <style>
-    header{
+    header {
         background: #ffffff;
         box-shadow: 100px;
         padding: 20px;
         border-bottom: solid 1px #ddd;
     }
-    :global(html){
+
+    :global(html) {
         scroll-behavior: smooth;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40px;
+        height: 24px;
+        cursor: pointer;
+        position: relative;
+        z-index: 50;
+    }
+
+    .line {
+        background-color: black;
+        height: 2px;
+        width: 36px;
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        transform-origin: center;
+    }
+
+    /* Set initial positions for top and bottom lines */
+    .top {
+        top: 0;
+    }
+
+    .middle {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .bottom {
+        bottom: 0;
+    }
+
+    /* Rotate and animate into "X" */
+    :global(.open.top) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    :global(.open.middle) {
+        opacity: 0;
+    }
+
+    :global(.open.bottom) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    /* Z-index of the full menu should be lower than the button */
+    ul {
+        z-index: 40;
     }
 </style>
