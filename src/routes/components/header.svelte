@@ -68,8 +68,8 @@
 <style>
 	header {
 		background: #ffffff;
-		box-shadow: 100px;
 		padding: 20px;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 		border-bottom: solid 1px #ddd;
 	}
 
