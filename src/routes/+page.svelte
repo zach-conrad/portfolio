@@ -7,140 +7,13 @@
 <Header />
 
 <main>
-	<div class="content" in:fade={{ duration: 300 }}>
-		<div id="about">
-			<p class="bottom-50">Dev branch test 2</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			1
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-		</div>
-		<data value=""></data>
-		<div id="projects">
-			<p class="bottom-d0">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-			<p class="bottom-50">This is a big test</p>
-		</div>
-		<div id="work"></div>
+	<div class="hero-section h-screen w-screen flex bg-slate-50 items-center font-roboto" id="about">
+		<h1 class="text-4xl font-bold text-left">Hello, I'm Zach.</h1>
 	</div>
+	<div id="projects"></div>
+	<p>Projects</p>
+	<div id="work"></div>
+	<p>Work</p>
 </main>
 
 <Footer />
@@ -148,6 +21,11 @@
 <style>
 	main {
 		max-width: 960px;
-		margin: 40px auto;
+		margin: 0 auto;
+		padding-top: 0;
+	}
+	.hero-section {
+		width: 100vw;
+		margin-left: calc(-50vw + 50%);
 	}
 </style>
