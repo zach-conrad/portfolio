@@ -2,13 +2,19 @@
 	import Header from './components/header.svelte';
 	import Footer from './components/footer.svelte';
 	import { fade } from 'svelte/transition';
+
+	import TypingAnimation from './components/TypingAnimation.svelte';
+	let texts = ['web developer.', 'student.', 'software developer.'];
 </script>
 
 <Header />
 
 <main>
 	<div class="hero-section h-screen w-screen flex bg-slate-50 items-center font-roboto" id="about">
-		<h1 class="text-4xl font-bold text-left">Hello, I'm Zach.</h1>
+		<div class="container mx-auto">
+			<h1 class="text-4xl font-bold">Hello, I'm Zach.</h1>
+			<p class="font-mono text-2xl">I'm a <TypingAnimation {texts} /></p>
+		</div>
 	</div>
 	<div id="projects"></div>
 	<p>Projects</p>
