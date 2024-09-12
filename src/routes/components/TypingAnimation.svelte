@@ -41,7 +41,7 @@
 
 <div class="text-2xl font-mono inline-block">
 	{displayText}
-	<span class="border-r-2 border-white animate-typing-cursor"></span>
+	<span class="border-r-2 border-black animate-typing-cursor"></span>
 </div>
 
 <style>
