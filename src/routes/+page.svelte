@@ -4,13 +4,17 @@
 	import { fade } from 'svelte/transition';
 
 	import TypingAnimation from './components/TypingAnimation.svelte';
-	let texts = ['web developer.', 'student.', 'software developer.'];
+	let texts = ['software developer.', 'website developer.', 'student.'];
 </script>
 
 <Header />
 
 <main>
-	<div class="hero-section h-screen w-screen flex bg-slate-50 items-center font-roboto" id="about">
+	<div
+		class="hero-section h-screen w-screen flex bg-slate-50 items-center font-roboto"
+		id="about"
+		transition:fade
+	>
 		<div class="container mx-auto">
 			<h1 class="text-4xl font-bold">Hello, I'm Zach.</h1>
 			<p class="font-mono text-2xl">I'm a <TypingAnimation {texts} /></p>
