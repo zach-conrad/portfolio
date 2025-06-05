@@ -4,7 +4,7 @@
 	import { fade } from 'svelte/transition';
 
 	import TypingAnimation from './components/TypingAnimation.svelte';
-	let texts = ['software developer.', 'website developer.', 'student.'];
+	let texts = ['software developer.', 'website developer.', 'database developer.'];
 </script>
 
 <Header />
