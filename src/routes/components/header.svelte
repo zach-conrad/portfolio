@@ -11,7 +11,7 @@
         </div>
 
         <ul class="hidden md:flex space-x-10">
-            <li><a href="#about" class="hover:text-gray-400">About</a></li>
+            <li><a href="#about" class="hover:text-gray-400">Test</a></li>
             <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
             <li><a href="#work" class="hover:text-gray-400">Work</a></li>
         </ul>
